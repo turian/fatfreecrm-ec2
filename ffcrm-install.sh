@@ -32,7 +32,7 @@ tar -xzf ffcrm.tar.gz
 mv michaeldv-fat_free_crm-d5315a2/ fatfreecrm
 cd fatfreecrm
 dir_name=`pwd`
-mysql -uroot -proot -e "create database fat_free_crm_production"
+mysql -uroot -p$db_pass -e "create database fat_free_crm_production"
 cp config/database.mysql.yml config/database.yml
 sed -i "s/password:/password: $db_pass/g" config/database.yml
 sed -i "s/socket: \/tmp\/mysql\.sock/hostname: localhost/g" config/database.yml

@@ -1,8 +1,10 @@
 Introduction
- This script installs FatFree CRM (http://www.fatfreecrm.com/) on a fresh EC2 instance running Ubuntu.
+ This script installs FatFree CRM (http://www.fatfreecrm.com/) on a fresh EC2 instance running Ubuntu 10.04 Lucid AMI ID ami-6006f309 (x86_64).
 
 Usage
+ Login via SSH as the 'ubuntu' user 
  $ sudo ./ffcrm-install.sh
+
 
 
 
